@@ -10,3 +10,14 @@ router.post("/api/workouts", (req, res) => {
             res.json(err);
         });
 });
+
+
+router.get("/api/workouts", (req, res) => {
+    Workout.find()
+        .then(workoutData => {
+            res.json(workoutData);
+        })
+        .catch(err => {
+            res.json(err);
+        });
+});
