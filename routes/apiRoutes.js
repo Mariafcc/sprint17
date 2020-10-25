@@ -31,3 +31,41 @@ router.get("/api/workouts/range", (req, res) => {
             res.json(err);
         });
 });
+
+router.put("/api/workouts/:id", ({ body, params }, res) => {
+    Workout.findByIdAndUpdate(
+        params.id,
+        {
+            $push: {
+                exercises: body
+            }
+        },
+        {
+            new: true,
+            runValidators: true
+        }
+    )
+        .then(workoutData => {
+            res.json(workoutData);
+        })
+        .catch(err => {
+            res.json(err);
+        });
+});
+
+router.delete("/api/workouts", ({ body }, res) => {
+    Workout.findByIdAndDelete(
+        body.id,
+
+    )
+        .then(() => {
+            res.json(true);
+        })
+        .catch(err => {
+            res.json(err);
+        });
+})
+
+module.exports = router;
+
+
