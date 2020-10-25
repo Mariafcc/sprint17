@@ -21,3 +21,13 @@ router.get("/api/workouts", (req, res) => {
             res.json(err);
         });
 });
+
+router.get("/api/workouts/range", (req, res) => {
+    Workout.find({}).limit(8)
+        .then(workoutData => {
+            res.json(workoutData);
+        })
+        .catch(err => {
+            res.json(err);
+        });
+});
