@@ -1,4 +1,5 @@
 # Fitness Tracker
+In this application, the user will be able 
 
 
 ## Deployed Website:
@@ -6,10 +7,17 @@
 
 ## DESCRIPTION
 
+
 ## SCREENSHOTS
 
 ### Landing page
 ![Landing Page](./img/startimg.png)
+### Workout when entered
+![](./img/enteredwo.png)
+### Dashboard
+![](./img/wodashboard.png)
+### Workout entry 
+![](./img/woent.png)
 
 
 
