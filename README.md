@@ -5,7 +5,6 @@ In this application, the user will be able enter their current workout session. 
 ## Deployed Website:
 [https://fitness-tracker-17-2020.herokuapp.com/](https://fitness-tracker-17-2020.herokuapp.com/)
 
-## DESCRIPTION
 
 
 ## SCREENSHOTS
